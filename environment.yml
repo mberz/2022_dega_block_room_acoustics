@@ -1,0 +1,21 @@
+name: 2022_dega_block_room_acoustics
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pyflakes
+  - python=3.9
+  - scons
+  - flake8
+  - numpy
+  - scipy
+  - matplotlib
+  - ipython
+  - ipykernel
+  - jupyter
+  - sympy
+  - pip:
+    - pyfar
+    - pyrato
+    - -e ./utils/
+prefix: ./env/2022_dega_block_room_acoustics
