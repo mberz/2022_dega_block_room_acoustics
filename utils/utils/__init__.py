@@ -3,8 +3,10 @@
 
 from . import folders
 from . import plot
+from .io import read_ita
 
 __all__ = [
     'folders',
-    'plot'
+    'plot',
+    'read_ita'
 ]
