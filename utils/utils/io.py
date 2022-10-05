@@ -71,12 +71,23 @@ def read_ita(filename):
     matfile = loadmat(
         filename, struct_as_record=False, squeeze_me=True, appendmat=False)
     mfiledata = matfile['ITA_TOOLBOX_AUDIO_OBJECT']
-    samplingrate = mfiledata.samplingRate
+
 
     if mfiledata.domain == 'time':
         data = mfiledata.data
+        try:
+            samplingrate = mfiledata.samplingRate
+        except AttributeError:
+            times = mfiledata.abscissa
+            return pf.TimeData(data.T, np.squeeze(times))
+
     elif mfiledata.domain == 'freq':
         data = ita_ifft(mfiledata.data, mfiledata.signalType)
+        try:
+            samplingrate = mfiledata.samplingRate
+        except AttributeError:
+            freqs = mfiledata.abscissa
+            return pf.FrequencyData(data.T, np.squeeze(freqs))
 
     if mfiledata.signalType == 'energy':
         norm = 'none'
