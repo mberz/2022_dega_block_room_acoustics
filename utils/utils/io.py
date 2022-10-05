@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.io import loadmat
+import pyfar as pf
 
 
 def ita_ifft(data, signaltype, n_samples=None):
@@ -77,4 +78,9 @@ def read_ita(filename):
     elif mfiledata.domain == 'freq':
         data = ita_ifft(mfiledata.data, mfiledata.signalType)
 
-    return data, samplingrate, mfiledata.signalType
+    if mfiledata.signalType == 'energy':
+        norm = 'none'
+    else:
+        norm = 'rms'
+
+    return pf.Signal(data.T, samplingrate, fft_norm=norm)
