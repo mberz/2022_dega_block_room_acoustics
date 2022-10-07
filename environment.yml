@@ -1,6 +1,7 @@
 name: 2022_dega_block_room_acoustics
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - pip
   - pyflakes
