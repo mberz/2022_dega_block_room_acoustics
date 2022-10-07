@@ -10,4 +10,4 @@ RIR_rec = MS.run;
 RIR_rec = RIR_rec.ch(1);
 
 %% save to disk
-ita_write_ita(ita_ifft(RIR_rec), 'RIR_rec_impulse.ita', 'overwrite')
+ita_write_ita(ita_ifft(RIR_rec), '../data/RIR_rec_impulse.ita', 'overwrite')
