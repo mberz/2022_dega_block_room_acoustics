@@ -2,7 +2,7 @@
 
 ## Usage and Contributing
 
-The content is provided as Open Educational Resource. The Jupyter notebooks and respective Python are licensed under the [MIT license](https://opensource.org/licenses/MIT); Audio (*.ita and *.wav) files are licensed under the [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/) license.
+The content is provided as [Open Educational Resource](https://en.wikipedia.org/wiki/Open_educational_resources). The Jupyter notebooks and respective Python are licensed under the [MIT license](https://opensource.org/licenses/MIT); Audio (*.ita and *.wav) files are licensed under the [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
 
 ##  Local Installation
