@@ -4,7 +4,6 @@ channels:
   - conda-forge
 dependencies:
   - pip
-  - pyflakes
   - python=3.9
   - scons
   - flake8
@@ -15,7 +14,6 @@ dependencies:
   - ipykernel
   - ipympl
   - jupyter
-  - sympy
   - pip:
     - git+https://github.com/pyfar/pyfar.git@1783928c16913c197fdfbaa2384287a8c9999c52
     - git+https://github.com/mberz/pyrato.git@60b4a1a976bfd0729ed2b36466dcda183871cbff
