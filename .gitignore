@@ -70,5 +70,6 @@ wheels/
 *.ent
 manuscript.pdf
 
-# backup files
+# backup files and folders
 *.bak
+bak/
