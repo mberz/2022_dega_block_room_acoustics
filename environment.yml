@@ -15,7 +15,7 @@ dependencies:
   - ipympl
   - jupyter
   - pip:
-    - git+https://github.com/pyfar/pyfar.git@1783928c16913c197fdfbaa2384287a8c9999c52
+    - pyfar>=0.5.0
     - git+https://github.com/mberz/pyrato.git@60b4a1a976bfd0729ed2b36466dcda183871cbff
     - -e ./utils/
 prefix: ./env/2022_dega_block_room_acoustics
